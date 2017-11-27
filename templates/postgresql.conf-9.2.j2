@@ -573,6 +573,17 @@ restart_after_crash = {{'on' if postgresql_restart_after_crash else 'off'}}		# r
 
 
 #------------------------------------------------------------------------------
+# CONFIG FILE INCLUDES
+#------------------------------------------------------------------------------
+
+# These options allow settings to be loaded from files other than the
+# default postgresql.conf.
+
+
+include_if_exists = 'conf.d/wal-e.conf'	# include file only if it exists
+
+
+#------------------------------------------------------------------------------
 # CUSTOMIZED OPTIONS
 #------------------------------------------------------------------------------
 
